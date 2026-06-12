@@ -11,14 +11,18 @@
         body { background-color: #020617; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; padding-bottom: 40px; }
         header { position: sticky; top: 0; background: rgba(2, 6, 23, 0.9); backdrop-filter: blur(8px); border-bottom: 1px solid #1e293b; z-index: 100; }
         .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; height: 65px; display: flex; align-items: center; justify-content: space-between; }
-        Floating WhatsApp Button Style */
-        .whatsapp-float { position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: #fff; border-radius: 50px; text-align: center; font-size: 15px; font-weight: 700; padding: 12px 22px; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid rgba(255,255,255,0.15); }
-        .whatsapp-float:hover { transform: translateY(-5px) scale(1.04); background-color: #20ba5a; box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6); }
         .logo-text { font-size: 22px; font-weight: 900; letter-spacing: 1px; background: linear-gradient(to right, #10b981, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .badge { background: rgba(16, 185, 129, 0.1); color: #10b981; font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: bold; border: 1px solid rgba(16, 185, 129, 0.2); margin-left: 8px; }
-        .btn-primary { background: linear-gradient(to right, #10b981, #14b8a6); color: #020617; font-weight: 800; padding: 12px 24px; border-radius: 10px; text-decoration: none; display: inline-block; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3); border: none; cursor: pointer; transition: transform 0.2s; }
-        .btn-primary:hover { transform: translateY(-2px); }
+        
+        /* Buttons Framework with Animations */
+        .btn-primary { background: linear-gradient(to right, #10b981, #14b8a6); color: #020617; font-weight: 800; padding: 12px 24px; border-radius: 10px; text-decoration: none; display: inline-block; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3); border: none; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 20px -3px rgba(16, 185, 129, 0.6); opacity: 0.95; }
         .btn-large { padding: 18px 36px; font-size: 18px; border-radius: 14px; width: 100%; max-width: 400px; text-align: center; display: block; margin: 0 auto; }
+        
+        /* Floating WhatsApp Button Style */
+        .whatsapp-float { position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: #fff; border-radius: 50px; text-align: center; font-size: 15px; font-weight: 700; padding: 12px 22px; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid rgba(255,255,255,0.15); }
+        .whatsapp-float:hover { transform: translateY(-5px) scale(1.04); background-color: #20ba5a; box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6); }
+        
         .hero { padding: 60px 20px; text-align: center; max-width: 800px; margin: 0 auto; }
         .launch-badge { background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 14px; border-radius: 30px; font-size: 12px; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 24px; border: 1px solid rgba(245, 158, 11, 0.2); }
         h1 { font-size: 38px; font-weight: 900; line-height: 1.2; margin-bottom: 20px; color: #ffffff; }
@@ -51,7 +55,7 @@
         .affiliate-box h4 { font-size: 24px; color: #fff; margin: 4px 0; }
         .affiliate-box span { font-size: 13px; color: #94a3b8; display: block; }
         .assistance-form { max-width: 400px; margin: 20px auto; display: flex; flex-direction: column; gap: 10px; }
-        .input-phone { width: 100%; background: #020617; border: 1px solid #334155; padding: 14px; border-radius: 10px; color: #fff; font-size: 15px; text-align: center; outline: none; }
+        .input-phone { width: 100%; background: #020617; border: 1px solid #334155; padding: 14px; border-radius: 10px; color: #fff; font-size: 15px; text-align: center; outline: none; transition: border-color 0.2s; }
         .input-phone:focus { border-color: #10b981; }
         .activation-box { background: linear-gradient(to right, rgba(16, 185, 129, 0.05), rgba(20, 184, 166, 0.05)); border: 1px solid rgba(16, 185, 129, 0.2); padding: 35px 20px; border-radius: 20px; text-align: center; margin-top: 40px; }
         .price-card { background: #020617; border: 1px solid #1e293b; max-width: 320px; margin: 20px auto; padding: 15px; border-radius: 12px; }
@@ -61,7 +65,8 @@
     </style>
 </head>
 <body>
-        <!-- FLOATING WHATSAPP BUTTON WITH HOVER LAYOUT -->
+
+    <!-- FLOATING WHATSAPP BUTTON WITH HOVER LAYOUT -->
     <!-- CHANGE THE NUMBER 256700000000 BELOW TO YOUR ACTUAL WHATSAPP SYSTEM PHONE NUMBER -->
     <a href="https://wa.me/256775148084?text=Hello%20coach%20am%20interested%20in%20Mulaprime%20please%20link%20me%20up." 
        class="whatsapp-float" 
@@ -78,7 +83,7 @@
                 <span class="badge">UGANDA 🇺🇬</span>
             </div>
             <div>
-                <a href="https://mulaprime.com/user/register.php?ref=Wiz25" class="btn-primary">Register</a>
+                <a href=https://mulaprime.com/user/register.php?ref=Wiz25" class="btn-primary">Register</a>
             </div>
         </div>
     </header>
@@ -113,14 +118,3 @@
         <p class="section-subtitle">Maximize your daily returns with diverse digital micro-tasks.</p>
         <div class="grid-layout">
             <div class="card"><div class="card-icon">🎧</div><h3>Paid Spotify Streams</h3><p>Listen to curated playlists and get rewarded for active playback time.</p></div>
-            <div class="card"><div class="card-icon">🎬</div><h3>Paid YouTube Videos</h3><p>Watch sponsored clips and trending videos to stack view rewards.</p></div>
-            <div class="card"><div class="card-icon">📱</div><h3>Paid TikTok Content</h3><p>Scroll through short social videos and earn automatic credit.</p></div>
-            <div class="card"><div class="card-icon">📢</div><h3>Paid Ad Clicks</h3><p>View ads from verified brands and get paid instantly per view.</p></div>
-            <div class="card"><div class="card-icon">⚡</div><h3>Daily Fix Tap</h3><p>Log in daily, tap once, and claim immediate login rewards.</p></div>
-            <div class="card"><div class="card-icon">📝</div><h3>Article Writing</h3><p>Draft straightforward text articles and secure internal approval credits.</p></div>
-            <div class="card"><div class="card-icon">🎯</div><h3>Company Quizzes</h3><p>Complete mini-surveys and quick business trivia for automated cash.</p></div>
-            <div class="card"><div class="card-icon">🛒</div><h3>Digital Marketplace</h3><p>Trade commercial items or promote local items for commission tier payouts.</p></div>
-            <div class="card"><div class="card-icon">📚</div><h3>Skill Academies</h3><p>Access modern video guides covering graphic design and online growth.</p></div>
-        </div>
-    </section>
-
